@@ -12,10 +12,8 @@ metro = {
     "Centro":         ["Virrey", "Portal Sur"],
     "Portal Sur":     ["Centro"],
 }
- 
-# TU SOLUCIÓN AQUÍ:
 def ruta_minima(grafo, origen, destino):
-    # Pista: usa BFS con seguimiento del camino
+    
     cola = deque([[origen]])
 
     while cola:
@@ -29,7 +27,6 @@ def ruta_minima(grafo, origen, destino):
             if vecino not in nodo:
                 nuevo_recorrido = nodo + [vecino]
                 cola.append(nuevo_recorrido)
-    
     pass
 
 # Prueba:
